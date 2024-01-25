@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ca">
     <head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>  
         <link rel="stylesheet" href="index.css">
         <meta charset="UTF-8">    <!-- codificació del text (UTF-8) -->
         <meta name="viewport" content="width=device-width, initial-scale=1">    <!-- adapta la visualització a les mides de la pantalla -->
@@ -35,22 +37,41 @@
           </div>         
         </div>
         <div id="seccio_1" class="seccio">
-            Secció 1 😂🤣😥
         </div>
         <div id="seccio_2" class="seccio">
-            Secció 2 😪😫🥱
+          <div id="div_foto">    <!-- contenidor de la vista prèvia de la foto feta -->
+            <img id="foto">
+            <i id="icona_camera" class="fa-solid fa-image"></i>    <!-- icona que ocupa l'espai quan encara no s'ha fet la foto -->
+          </div>
+          <div id="div_control">    <!-- contenidor dels botons per fer i desar la foto -->
+              <label for="obturador">    <!-- etiqueta auxiliar per ocultar el botó predeterminat -->
+                <i class="fa-solid fa-circle-dot"></i>    <!-- icona del botó per fer la foto -->
+              </label>
+              <input type="file" accept="image/*" id="obturador" capture="camera" /> <!-- element que captura la imatge -->
+              <i id="desa" class="fa-solid fa-check"></i>    <!-- icona del botó per desar la foto -->
+          </div>
+          <canvas id="canvas"></canvas>
+          <div id="div_gran">
+          <img id="foto_gran" />
+          </div>
         </div>
         <div id="seccio_3" class="seccio">
-            Secció 3 🤐😯😫
+          <div id="llista_titol">    <!-- capçalera de la llista de fotos -->
+            <i class="fa-solid fa-image"></i>    <!-- per a la miniatura de les fotos -->
+            <i class="fa-solid fa-calendar-days"></i>    <!-- per a la data de captura de les fotos -->
+            <i class="fa-solid fa-trash"></i>    <!-- per esborrar les fotos -->    
+          </div>
+          <div id="llista_fotos">    <!-- contenidor, inicialment buit, on hi haurà una fila per a cada foto -->
+          </div>
         </div>
         <div id="seccio_4" class="seccio">
-            Secció 4 🤢🤕🤬
+          <img src="https://c0.klipartz.com/pngpicture/479/573/gratis-png-nino-llorando-escritorio-del-nino-nino-thumbnail.png"
         </div>
         <div id="menu">
-            <i id="boto_1" class="fa-solid fa-face-sad-cry"></i>
-            <i id="boto_2" class="fa-solid fa-hippo"></i>
-            <i id="boto_3" class="fa-solid fa-face-sad-tear"></i>
-            <i id="boto_4" class="fa-solid fa-face-grin-tears"></i>
+            <i id="boto_1" class="fa-solid fa-house"></i>
+            <i id="boto_2" class="fa-solid fa-camera"></i>
+            <i id="boto_3" class="fa-solid fa-image"></i>
+            <i id="boto_4" class="fa-solid fa-map"></i>
             <i class="fa-solid fa-right-from-bracket"></i>
         </div>
     </body>
