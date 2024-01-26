@@ -84,9 +84,16 @@ body {
     font-size: 4vmax;
 }
 #seccio_4 {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
+    align-items: flex;
+    font-size: 4vmax;
+}
+#seccio_5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: column;
     align-items: flex;
     font-size: 4vmax;
 }
