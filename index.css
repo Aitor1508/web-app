@@ -57,7 +57,7 @@ body {
     }
 }
 #seccio_0 {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -91,7 +91,7 @@ body {
     font-size: 4vmax;
 }
 #seccio_5 {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: column;
     align-items: flex;
