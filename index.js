@@ -81,4 +81,3 @@ function tanca_sessio() {
         }
     }
 }
-let 
