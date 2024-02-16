@@ -92,8 +92,8 @@ body {
 }
 #seccio_5 {
     display: none;
-    flex-direction: column;
-    justify-content: column;
+    flex-direction: center;
+    justify-content: center;
     align-items: flex;
     font-size: 4vmax;
 }
