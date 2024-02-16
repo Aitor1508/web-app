@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">    <!-- adapta la visualització a les mides de la pantalla -->
         <meta name="description" content="Descripció de la nostra webapp.">    <!-- breu descripció per als cercadors -->
         <title>
-            La lloreria 😭😢😭
+          😭😢😭
         </title>
     </head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
@@ -51,10 +51,12 @@
               </label>
               <input type="file" accept="image/*" id="obturador" capture="camera" /> <!-- element que captura la imatge -->
               <i id="desa" class="fa-solid fa-check"></i>    <!-- icona del botó per desar la foto -->
+              <img id="foto" onclick="mostra_foto(0)">
+              <img id="foto_gran" onclick="retorn_a_seccio()" /> 
+              <div id="div_gran">
+              <img id="foto_gran" />
           </div>
           <canvas id="canvas"></canvas>
-          <div id="div_gran">
-          <img id="foto_gran" />
           </div>
         </div>
         <div id="seccio_3" class="seccio">
@@ -69,7 +71,7 @@
         <div id="seccio_4" class="seccio">
         </div>
         <div id="seccio_5" class="seccio">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUchHwwANghUSfM7Vbr14ct24VFCkPS5atiA&usqp=CAU" width="flex", height="555">
+          <img src="https://img.asmedia.epimg.net/resizer/Xo6ZUijvNZVIu8wPTR_jk8JaKyA=/1472x1104/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/HC5AMKQWOBJWDPY6CEH7ACGWRU.jpg" width="flex", height="flex">
         </div>
         <div id="menu">
             <i id="boto_1" class="fa-solid fa-house"  onclick="canvia_seccio(1)"></i>
@@ -77,7 +79,7 @@
             <i id="boto_3" class="fa-solid fa-image" onclick="canvia_seccio(3)"></i>     
             <i id="boto_4" class="fa-solid fa-map" onclick="canvia_seccio(4)"></i>     
             <i id="boto_5" class="fa-solid fa-bomb" onclick="canvia_seccio(5)"></i>  
-            <i class="fa-solid fa-right-from-bracket" onclick="tanca_sessio()"></i>     
+            <i class="fa-solid fa-right-from-bracket" onclick="tanca_sessio()"></i>    
         </div>
     </body>
 </html>

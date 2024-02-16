@@ -220,3 +220,6 @@ body {
         height: 70vmin;
     }
 }
+.ocult {
+    display: none !important;    /* amb prioritat sobre les declaracions condicionals segons l'orientació */
+}
