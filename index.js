@@ -173,7 +173,7 @@ function retorn_a_seccio() {
 function omple_llista() {
     let llista = '';
     indexedDB.open("Dades").onsuccess = event => {
-        event.target.result.transaction(["Fotos"], "readonly").objectStore("Fotos").index("Usuari_index").getAll(usuari).onsuccess = event => {
+        event.target.result.transaction(["Fotos"], "readonly").objectStore("Fotos").index("Usuari_index").getAll(nom).onsuccess = event => {
             dades = event.target.result;
             for (i in dades) {    // per cada foto
                 llista+= '<div class="llista_fila"><div><img src="';    // es crea un contenidor de fila
