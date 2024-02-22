@@ -68,6 +68,7 @@ body {
     justify-content: center;    
     align-items: center;    
     font-size: 4vmax;
+    flex-direction: column;
 }
 #seccio_2 {
     display: none;
