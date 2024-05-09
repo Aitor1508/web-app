@@ -98,6 +98,13 @@ body {
     align-items: flex;
     font-size: 4vmax;
 }
+#seccio_6 {
+    display: none;
+    flex-direction: center;
+    justify-content: center;
+    align-items: flex;
+    font-size: 4vmax;
+}
 #credencials {
     display: flex;
     flex-direction: column;
